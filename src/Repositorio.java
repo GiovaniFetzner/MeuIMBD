@@ -1,6 +1,6 @@
 public class Repositorio {
 
     Repositorio ArquivoDigital[];
-    private final int NUMERO_ELEMENTOS = 10;
+    private final int MAX_NUMERO_ELEMENTOS = 10;
 
 }
