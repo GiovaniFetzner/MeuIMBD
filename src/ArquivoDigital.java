@@ -13,6 +13,10 @@ public class ArquivoDigital {
         this.categoria = categoria;
     }
 
+    public String Informacoes() {
+        return nome + " " + categoria;
+    }
+
     public int getCodigo() {
         return codigo;
     }
