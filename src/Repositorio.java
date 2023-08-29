@@ -1,6 +1,9 @@
 public class Repositorio {
 
-    Repositorio ArquivoDigital[];
+    private ArquivoDigital[] ColecaoArquivos;
     private final int MAX_NUMERO_ELEMENTOS = 10;
 
+    public Repositorio() {
+        ColecaoArquivos = new ArquivoDigital[MAX_NUMERO_ELEMENTOS];
+    }
 }
