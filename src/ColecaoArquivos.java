@@ -20,6 +20,10 @@ public class ColecaoArquivos {
         return posicao;
     }
 
+    public ArquivoDigital[] getColecaoArquivos() {
+        return ColecaoArquivos;
+    }
+
     /*public Boolean consultaPosicao() {
         if (ColecaoArquivos[i] != null) {
                 return true;

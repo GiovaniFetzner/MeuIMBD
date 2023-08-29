@@ -13,7 +13,7 @@ public class ArquivoDigital {
         this.categoria = categoria;
     }
 
-    public String Informacoes() {
+    public String informacoes() {
         return "Nome:" + nome + ", Categoria:" + categoria;
     }
 
