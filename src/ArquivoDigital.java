@@ -14,7 +14,7 @@ public class ArquivoDigital {
     }
 
     public String Informacoes() {
-        return nome + " " + categoria;
+        return "Nome:" + nome + ", Categoria:" + categoria;
     }
 
     public int getCodigo() {

@@ -6,6 +6,16 @@ public class Repositorio {
     public Repositorio() {
         ColecaoArquivos = new ArquivoDigital[MAX_NUMERO_ELEMENTOS];
     }
+
+    public boolean AdicionaObra(int posicao, ArquivoDigital midia){
+        ColecaoArquivos[posicao] = midia;
+        return true;
+    }
+
+    public ArquivoDigital MostraColecao(int posicao){
+        return ColecaoArquivos[posicao];
+    }
+
  /*   public String MostraColecao(){
         for (int i = 0; i < ColecaoArquivos.length, i++){
             if (ColecaoArquivos[i] != null) {
