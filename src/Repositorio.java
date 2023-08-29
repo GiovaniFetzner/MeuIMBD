@@ -12,8 +12,8 @@ public class Repositorio {
         return true;
     }
 
-    public ArquivoDigital MostraColecao(int posicao){
-        return ColecaoArquivos[posicao];
+    public String MostraColecao(int posicao){
+        return ColecaoArquivos[posicao].Informacoes();
     }
 
  /*   public String MostraColecao(){

@@ -10,8 +10,10 @@ public class Main {
         ArquivoDigital serie01 = new ArquivoDigital(321, 2023, "Ragnarok", "Desconhecido",
                 "Desconhecido", Categoria.SERIADO);
 
-        System.out.println(filme01.Informacoes());
+        //System.out.println(filme01.Informacoes());
 
+        VideoKlip.AdicionaObra(0,serie01);
+        System.out.println(VideoKlip.MostraColecao(0));
 
 
 
