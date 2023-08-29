@@ -2,7 +2,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Repositorio VideoKlip = new Repositorio();
+        ColecaoArquivos videoKlip = new ColecaoArquivos();
 
         ArquivoDigital filme01 = new ArquivoDigital(123, 2023, "Oppenheimer", "Crystopher Nolan",
                 "Cillian M.", Categoria.FILME);
@@ -12,9 +12,15 @@ public class Main {
 
         //System.out.println(filme01.Informacoes());
 
-        VideoKlip.AdicionaObra(0,serie01);
-        VideoKlip.AdicionaObra(9,filme01);
-        System.out.println(VideoKlip.MostraColecao(8));
+        videoKlip.adicionaObra(0,serie01);
+        videoKlip.adicionaObra(9,filme01);
+        System.out.println("Verificação se possui algum arquivo na posição 8: " + videoKlip.consultaPosicao(8));
+        System.out.println(" -- Colecao de arquivos -- ");
+
+        for (int i = 0; i < 10 ; i++){
+            System.out.println(videoKlip.consultaPosicao(i));
+        }
+
 
 
 
