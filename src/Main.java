@@ -7,14 +7,18 @@ public class Main {
         ArquivoDigital filme01 = new ArquivoDigital(123, 2023, "Oppenheimer", "Crystopher Nolan",
                 "Cillian M.", Categoria.FILME);
 
+        ArquivoDigital filme02 = new ArquivoDigital(123, 1999, "A espera de um milagre", "Tom Hanks",
+                "Michael C.", Categoria.FILME);
+
         ArquivoDigital serie01 = new ArquivoDigital(321, 2023, "Ragnarok", "Desconhecido",
                 "Desconhecido", Categoria.SERIADO);
 
-        //System.out.println(filme01.Informacoes());
+        //System.out.println(filme02.informacoes());
 
         videoKlip.adicionaObra(0,serie01);
         videoKlip.adicionaObra(9,filme01);
-        System.out.println("Verificação se possui algum arquivo na posição 8: " + videoKlip.consultaPosicao(8));
+        videoKlip.adicionaObra(8,filme02);
+        System.out.println("Verificação se possui algum arquivo na posição 4: " + videoKlip.consultaPosicao(4));
         System.out.println(" -- Verifica posições na lista -- ");
 
         for (int i = 0; i < 10 ; i++){
