@@ -13,12 +13,16 @@ public class Main {
         ArquivoDigital serie01 = new ArquivoDigital(321, 2023, "Ragnarok", "Desconhecido",
                 "Desconhecido", Categoria.SERIADO);
 
+        ArquivoDigital serie02 = new ArquivoDigital(321, 1984, "Dragon Ball", "Akira Toriyama",
+                "Goku", Categoria.SERIADO);
+
         //System.out.println(filme02.informacoes());
 
         videoKlip.adicionaObra(0,serie01);
         videoKlip.adicionaObra(9,filme01);
         videoKlip.adicionaObra(8,filme02);
-        System.out.println("Verificação se possui algum arquivo na posição 4: " + videoKlip.consultaPosicao(4));
+        videoKlip.adicionaObra(serie02);
+        System.out.println("Verificação se possui algum arquivo na posição 1: " + videoKlip.consultaPosicao(1));
         System.out.println(" -- Verifica posições na lista -- ");
 
         for (int i = 0; i < 10 ; i++){

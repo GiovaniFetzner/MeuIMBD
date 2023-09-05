@@ -9,9 +9,19 @@ public class ColecaoArquivos {
     }
 
     public boolean adicionaObra(int posicao, ArquivoDigital midia) {
-       if (posicao < MAX_NUMERO_ELEMENTOS && posicao >= 0 && ColecaoArquivos[posicao] == null) {
-           ColecaoArquivos[posicao] = midia;
-           return true;
+        if (posicao < MAX_NUMERO_ELEMENTOS && posicao >= 0 && ColecaoArquivos[posicao] == null) {
+            ColecaoArquivos[posicao] = midia;
+            return true;
+        }
+        return false;
+    }
+
+    public boolean adicionaObra(ArquivoDigital midia) {
+        for (int i = 0; i < getColecaoArquivos().length; i++) {
+            if (ColecaoArquivos[i] == null) {
+                ColecaoArquivos[i] = midia;
+                return true;
+            }
         }
         return false;
     }
@@ -26,13 +36,5 @@ public class ColecaoArquivos {
     public ArquivoDigital[] getColecaoArquivos() {
         return ColecaoArquivos;
     }
-
-    /*public Boolean consultaPosicao() {
-        if (ColecaoArquivos[i] != null) {
-                return true;
-            } else {
-                return false;
-            }
-    }*/
 
 }
