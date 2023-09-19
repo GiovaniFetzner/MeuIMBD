@@ -3,7 +3,7 @@ public class ArquivoDigital {
     private int codigo, ano;
     private String nome, diretor, principaisAtores;
     private Categoria categoria;
-
+    private Genero genero;
     public ArquivoDigital(int codigo, int ano, String nome, String diretor, String principaisAtores, Categoria categoria) {
         this.codigo = codigo;
         this.ano = ano;
