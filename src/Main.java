@@ -7,16 +7,16 @@ public class Main {
         ColecaoArquivos videoKlip = new ColecaoArquivos();
 
         ArquivoDigital filme01 = new ArquivoDigital(123, 2023, "Oppenheimer", "Crystopher Nolan",
-                "Cillian M.", Categoria.FILME);
+                "Cillian M.", Categoria.FILME, Genero.ACAO);
 
         ArquivoDigital filme02 = new ArquivoDigital(123, 1999, "A espera de um milagre", "Tom Hanks",
-                "Michael C.", Categoria.FILME);
+                "Michael C.", Categoria.FILME,Genero.DRAMA);
 
         ArquivoDigital serie01 = new ArquivoDigital(321, 2023, "Ragnarok", "Desconhecido",
-                "Desconhecido", Categoria.SERIADO);
+                "Desconhecido", Categoria.SERIADO, Genero.FICCAO);
 
         ArquivoDigital serie02 = new ArquivoDigital(321, 1984, "Dragon Ball", "Akira Toriyama",
-                "Goku", Categoria.SERIADO);
+                "Goku", Categoria.SERIADO, Genero.ANIMACAO);
 
         //System.out.println(filme02.informacoes());
 

@@ -4,7 +4,8 @@ public class ArquivoDigital {
     private String nome, diretor, principaisAtores;
     private Categoria categoria;
     private Genero genero;
-    public ArquivoDigital(int codigo, int ano, String nome, String diretor, String principaisAtores, Categoria categoria) {
+    public ArquivoDigital(int codigo, int ano, String nome, String diretor, String principaisAtores,
+                          Categoria categoria, Genero genero) {
         this.codigo = codigo;
         this.ano = ano;
         this.nome = nome;
@@ -64,4 +65,13 @@ public class ArquivoDigital {
     public void setCategoria(Categoria categoria) {
         this.categoria = categoria;
     }
+
+    public Genero getGenero() {
+        return genero;
+    }
+
+    public void setGenero(Genero genero) {
+        this.genero = genero;
+    }
+
 }
