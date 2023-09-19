@@ -5,7 +5,8 @@ public class ColecaoArquivos {
      * Adiciona arquivo na primeira posição vaga [OK]
      * Consulta posição retornando a posição ou -1 (caso inválido) [OK]
      * Consulta posição retornando o index ou -1 (utilizando o objeto como referência) [OK]
-     * Remover contato pela posição [ ]
+     * Remove arquivo pela posição [OK]
+     * Remove arquivo utilizando o arquivo como referência [OK]
      *
      * */
 
@@ -33,6 +34,7 @@ public class ColecaoArquivos {
             for (int i = 0; i < getColecaoArquivos().length; i++) {
                 if (ColecaoArquivos[i] == null) {
                     ColecaoArquivos[i] = midia;
+                    numeroDeElementos++;
                     return true;
                 }
             }
@@ -84,5 +86,10 @@ public class ColecaoArquivos {
     public ArquivoDigital[] getColecaoArquivos() {
         return ColecaoArquivos;
     }
+
+    public int getNumeroDeElementos(){
+        return numeroDeElementos;
+    }
+
 
 }
