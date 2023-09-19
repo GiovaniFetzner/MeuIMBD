@@ -91,5 +91,8 @@ public class ColecaoArquivos {
         return numeroDeElementos;
     }
 
+    public int getTamanhoColecao(){
+        return ColecaoArquivos.length;
+    }
 
 }

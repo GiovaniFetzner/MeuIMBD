@@ -27,6 +27,7 @@ public class Main {
         System.out.println("Verificação se possui algum arquivo na posição 1: " + videoKlip.consultaPosicao(1));
         System.out.println("Verificação posicao da serie02: " + videoKlip.consultaPosicao(serie02));
         System.out.println("Confere numero de elementos na lista: " + videoKlip.getNumeroDeElementos());
+        System.out.println("Tamanho da coleção: " + videoKlip.getTamanhoColecao());
         System.out.println(" -- Verifica posições na lista -- ");
 
         for (int i = 0; i < 10 ; i++){
@@ -49,5 +50,6 @@ public class Main {
             }
         }
     }
+
 
 }
