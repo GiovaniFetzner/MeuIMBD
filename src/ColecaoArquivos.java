@@ -39,12 +39,24 @@ public class ColecaoArquivos {
         return false;
     }
 
+
+
     public int consultaPosicao(int posicao) {
         if (posicao < 0 || posicao >= MAX_NUMERO_ELEMENTOS || ColecaoArquivos[posicao] == null) {
             return POSICAO_INVALIDA;
         } else {
             return posicao;
         }
+    }
+
+    public int consultaPosicao (ArquivoDigital arquivoDigital){
+        for (int i = 0; i < ColecaoArquivos.length; i++){
+
+            if (ColecaoArquivos[i] != null && ColecaoArquivos[i].equals(arquivoDigital)){
+                return i;
+            }
+        }
+        return POSICAO_INVALIDA;
     }
 
     public ArquivoDigital[] getColecaoArquivos() {

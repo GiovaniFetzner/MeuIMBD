@@ -23,9 +23,9 @@ public class Main {
         videoKlip.adicionaObra(0,serie01);
         videoKlip.adicionaObra(9,filme01);
         videoKlip.adicionaObra(8,filme02);
-        videoKlip.adicionaObra(serie02);
+        //videoKlip.adicionaObra(serie02);
         System.out.println("Verificação se possui algum arquivo na posição 1: " + videoKlip.consultaPosicao(1));
-        System.out.println("Verificação se possui algum arquivo na posição 2: " + videoKlip.consultaPosicao(2));
+        System.out.println("Verificação posicao da serie02: " + videoKlip.consultaPosicao(serie02));
         System.out.println(" -- Verifica posições na lista -- ");
 
         for (int i = 0; i < 10 ; i++){
