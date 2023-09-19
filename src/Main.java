@@ -10,7 +10,7 @@ public class Main {
                 "Cillian M.", Categoria.FILME, Genero.ACAO);
 
         ArquivoDigital filme02 = new ArquivoDigital(123, 1999, "A espera de um milagre", "Tom Hanks",
-                "Michael C.", Categoria.FILME, Genero.DRAMA);
+                "Michael C.", Categoria.FILME, Genero.DRAMA,Streaming.NETFLIX,Streaming.AMAZON_PRIME);
 
         ArquivoDigital serie01 = new ArquivoDigital(321, 2023, "Ragnarok", "Desconhecido",
                 "Desconhecido", Categoria.SERIADO, Genero.FICCAO);
@@ -19,6 +19,11 @@ public class Main {
                 "Goku", Categoria.SERIADO, Genero.ANIMACAO);
 
         //System.out.println(filme02.informacoes());
+
+        System.out.println("Informações do filme criado usando a list: "+ filme02.getStreaming());
+        System.out.println("Informações do filme criado usando a list: "+ filme01.getStreaming());
+        filme01.adicionaPlataformaStreaming(Streaming.NETFLIX);
+        System.out.println("Informações do filme criado usando a list: "+ filme01.getStreaming());
 
         videoKlip.adicionaObra(0, serie01);
         videoKlip.adicionaObra(9, filme01);

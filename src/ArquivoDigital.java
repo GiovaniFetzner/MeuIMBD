@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
 
@@ -16,7 +17,7 @@ public class ArquivoDigital {
         this.diretor = diretor;
         this.principaisAtores = principaisAtores;
         this.categoria = categoria;
-        this.streaming = Arrays.asList(plataformas);
+        this.streaming = new ArrayList<>(Arrays.asList(plataformas));
     }
 
     public String informacoes() {
@@ -79,4 +80,16 @@ public class ArquivoDigital {
         this.genero = genero;
     }
 
+    public List<Streaming> getStreaming() {
+        return streaming;
+    }
+
+    public void setStreaming(List<Streaming> streaming) {
+        this.streaming = streaming;
+    }
+    public void adicionaPlataformaStreaming(Streaming plataforma){
+        this.streaming.add(plataforma);
+    }    public void removePlataformaStreaming(Streaming plataforma){
+        this.streaming.remove(plataforma);
+    }
 }
