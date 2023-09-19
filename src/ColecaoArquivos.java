@@ -1,13 +1,13 @@
 public class ColecaoArquivos {
 
     /*
-    * Adiciona arquivo na posicao desejada [OK]
-    * Adiciona arquivo na primeira posição vaga [OK]
-    * Consulta posição retornando a posição ou -1 (caso inválido) [OK]
-    * Consulta posição retornando o index ou -1 (utilizando o objeto como referência) [OK]
-    * Remover contato pela posição [ ]
-    *
-    * */
+     * Adiciona arquivo na posicao desejada [OK]
+     * Adiciona arquivo na primeira posição vaga [OK]
+     * Consulta posição retornando a posição ou -1 (caso inválido) [OK]
+     * Consulta posição retornando o index ou -1 (utilizando o objeto como referência) [OK]
+     * Remover contato pela posição [ ]
+     *
+     * */
 
     private ArquivoDigital[] ColecaoArquivos;
     private final int MAX_NUMERO_ELEMENTOS = 10;
@@ -29,7 +29,7 @@ public class ColecaoArquivos {
     }
 
     public boolean adicionaObra(ArquivoDigital midia) {
-        if(numeroDeElementos <= ColecaoArquivos.length){
+        if (numeroDeElementos <= ColecaoArquivos.length) {
             for (int i = 0; i < getColecaoArquivos().length; i++) {
                 if (ColecaoArquivos[i] == null) {
                     ColecaoArquivos[i] = midia;
@@ -41,7 +41,6 @@ public class ColecaoArquivos {
     }
 
 
-
     public int consultaPosicao(int posicao) {
         if (posicao < 0 || posicao >= MAX_NUMERO_ELEMENTOS || ColecaoArquivos[posicao] == null) {
             return POSICAO_INVALIDA;
@@ -50,9 +49,9 @@ public class ColecaoArquivos {
         }
     }
 
-    public boolean removeOBra(ArquivoDigital arquivoDigital){
-        for (int i = 0; i < ColecaoArquivos.length; i++){
-            if (ColecaoArquivos[i] != null && ColecaoArquivos[i].equals(arquivoDigital)){
+    public boolean removeObra(ArquivoDigital arquivoDigital) {
+        for (int i = 0; i < ColecaoArquivos.length; i++) {
+            if (ColecaoArquivos[i] != null && ColecaoArquivos[i].equals(arquivoDigital)) {
                 ColecaoArquivos[i] = null;
                 numeroDeElementos--;
                 return true;
@@ -61,11 +60,21 @@ public class ColecaoArquivos {
         return false;
     }
 
+    public boolean removeObra(int posicao) {
+        //verifica posição
+        if (posicao < 0 || posicao >= MAX_NUMERO_ELEMENTOS || ColecaoArquivos[posicao] == null) {
+            return false;
+        } else {
+            ColecaoArquivos[posicao] = null;
+            numeroDeElementos--;
+            return true;
+        }
+    }
 
-    public int consultaPosicao (ArquivoDigital arquivoDigital){
-        for (int i = 0; i < ColecaoArquivos.length; i++){
+    public int consultaPosicao(ArquivoDigital arquivoDigital) {
+        for (int i = 0; i < ColecaoArquivos.length; i++) {
 
-            if (ColecaoArquivos[i] != null && ColecaoArquivos[i].equals(arquivoDigital)){
+            if (ColecaoArquivos[i] != null && ColecaoArquivos[i].equals(arquivoDigital)) {
                 return i;
             }
         }
