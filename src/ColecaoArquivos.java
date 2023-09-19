@@ -7,7 +7,8 @@ public class ColecaoArquivos {
      * Consulta posição retornando o index ou -1 (utilizando o objeto como referência) [OK]
      * Remove arquivo pela posição [OK]
      * Remove arquivo utilizando o arquivo como referência [OK]
-     *
+     * Retorna quantidade de elementos [OK]
+     * Retorna tamanho da coleção [OK]
      * */
 
     private ArquivoDigital[] ColecaoArquivos;
