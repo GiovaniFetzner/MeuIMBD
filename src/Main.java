@@ -10,7 +10,7 @@ public class Main {
                 "Cillian M.", Categoria.FILME, Genero.ACAO);
 
         ArquivoDigital filme02 = new ArquivoDigital(123, 1999, "A espera de um milagre", "Tom Hanks",
-                "Michael C.", Categoria.FILME,Genero.DRAMA);
+                "Michael C.", Categoria.FILME, Genero.DRAMA);
 
         ArquivoDigital serie01 = new ArquivoDigital(321, 2023, "Ragnarok", "Desconhecido",
                 "Desconhecido", Categoria.SERIADO, Genero.FICCAO);
@@ -20,9 +20,9 @@ public class Main {
 
         //System.out.println(filme02.informacoes());
 
-        videoKlip.adicionaObra(0,serie01);
-        videoKlip.adicionaObra(9,filme01);
-        videoKlip.adicionaObra(8,filme02);
+        videoKlip.adicionaObra(0, serie01);
+        videoKlip.adicionaObra(9, filme01);
+        videoKlip.adicionaObra(8, filme02);
         videoKlip.adicionaObra(serie02);
         System.out.println("Verificação se possui algum arquivo na posição 1: " + videoKlip.consultaPosicao(1));
         System.out.println("Verificação posicao da serie02: " + videoKlip.consultaPosicao(serie02));
@@ -30,7 +30,7 @@ public class Main {
         System.out.println("Tamanho da coleção: " + videoKlip.getTamanhoColecao());
         System.out.println(" -- Verifica posições na lista -- ");
 
-        for (int i = 0; i < 10 ; i++){
+        for (int i = 0; i < 10; i++) {
             System.out.println(videoKlip.consultaPosicao(i));
         }
 
